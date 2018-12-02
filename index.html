@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+		<head>			
+			<title>cool title</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="styles/main.css">
+			<link rel="stylesheet" href="styles/bootstrap.css">
+			<link rel="stylesheet" href="styles/bootstrap-responsive.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta charset="utf-8">
+		</head>
+	<body>
+	<div class="header">
+  		<div class="progress-container">
+   	 	<div class="progress-bar" id="myBar"></div>
+ 	 	</div>
+	</div>
+
+			<div class="img-slides">
+				<img class="mySlides w3-animate-fading" src="images/2a.JPG" style="width:100%; max-width: 100%; height: auto;">
+				 <img class="mySlides w3-animate-fading" src="images/2.JPG" style="width:100%; max-width: 100%;">
+			 	  <img class="mySlides w3-animate-fading" src="images/3.JPG" style="width:100%; max-width: 100%; height: auto;">
+			 	   <img class="mySlides w3-animate-fading" src="images/4.JPG" style="width:100%; max-width: 100%; height: auto;">
+					<img class="mySlides w3-animate-fading" src="images/5.JPG" style="width:100%; max-width: 100%; height: auto;">
+			   		 <img class="mySlides w3-animate-fading" src="images/10.JPG" style="width:100%; max-width: 100%; height: auto;">
+			   	 	  <img class="mySlides w3-animate-fading" src="images/6.JPG" style="width:100%; max-width: 100%; height: auto;">
+			    	   <img class="mySlides w3-animate-fading" src="images/8.JPG" style="width:100%; max-width: 100%; height: auto;">
+			</div>
+
+			<ol class="breadcrumb img-text-menu">
+				  <li class="active">Hjem</li>
+				  <li><a href="#">Fotos</a></li>
+				  <li><a href="Schickel.html">Schickel</a></li>
+				</ol>		
+			<div class="jumbotron img-text-center"><!DOCTYPE html>
+				<div class="start-tekst">
+			 	 <h1>Marius i Tyskland!</h1>			  	
+			 	 <p>2018/19</p>
+				</div>
+				<br>
+			  <p><a class="btn btn-info btn-lg" onclick="scrollWin()" role="button">Learn more</a></p>
+			</div>
+
+		 		<img class="img-left img-circle" src="images/13.JPG" style="width: 260px; max-width: 100%" alt="Lederhosen"> 
+					<div class="col-right">
+						<div class="tekst">
+							På denne hjemmeside som jeg selv har bygget, kommer du til at se
+							billeder og oplevelser som jeg vil dele i løbet af året.
+							Jeg kommer til at lægge noget nyt ind løbende.
+							Højest sandsyndeligt 1 gang om ugen, så hold dig selv opdateret.
+							Og del gerne linket til hjemmesiden med andre som du synes også skal følge med!
+						</div>
+					</div>
+			<div class="container">
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+
+<script>
+function scrollWin() {
+    window.scrollBy(0, 15 0);
+
+}
+</script>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    }
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>

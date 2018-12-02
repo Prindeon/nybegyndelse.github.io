@@ -1,0 +1,75 @@
+body {
+  font-family: Helvetica;
+  padding: 0%;
+}
+
+ /* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+} 
+
+
+.img-text-menu {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 25px;
+}
+
+.img-text-center {
+    
+    color: white;
+    left: 50%;   
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+}
+
+.start-tekst {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.w3-animate-fading {
+  animation:fading 10s infinite;
+}
+
+@keyframes fading {
+0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+.img-left {
+  float: left;
+}
+
+
+.col-right {
+  font-family: monospace;
+  font-size: 140%;
+  float: right;
+  text-align: justify;
+}
+
+
+footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
